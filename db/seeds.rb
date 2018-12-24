@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+# Deixar aqui apenas os que irão ficar em PRODUÇÂO, senão colocar em uma TASK
 puts "Gerando tipos de contato (kinds)..."
   Kind.create!([{description: "Amigo"},
                 {description: "Contato"},
@@ -13,14 +14,4 @@ puts "Gerando tipos de contato (kinds)..."
 puts "Gerando tipos de contato (kinds)... [OK]"
 
 
-puts "Gerando os contato (Contacts)..."
-  10.times do |i|
-    Contact.create!(
-      name: Faker::Name.name,
-      email: Faker::Internet.email,
-      kind: Kind.all.sample,
-      rmk: Faker::Lorem.paragraph([1,2,3,4,5].sample)
 
-    )
-end
-puts "Gerando os contato (Contacts)... [OK]"
