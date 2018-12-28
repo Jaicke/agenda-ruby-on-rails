@@ -4,8 +4,14 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 
+# Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms http://github.com/nathanvda/cocoon
+gem 'cocoon'
+
 # A library for generating fake data such as names, addresses, and phone numbers.
 gem 'faker'
+
+# Internationalization (i18n) library for Ruby http://rails-i18n.org/wiki
+gem 'rails-i18n'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -39,6 +45,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rails-pry'
 end
 
 group :development do
