@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-<h1>Address</h1>
+<h1><%= @address.model_name.human(count: 1) %></h1>
   <div class="field">
     <%= f.label :street %><br>
     <%= f.text_field :street %>
@@ -28,7 +28,7 @@
     <%= f.text_field :contact_id %>
   </div>
   <div class="actions">
-    <%= f.submit("Enviar", class:"button") %>
-    <%= link_to 'Back', addresses_path, class:"button-back" %>
+    <%= f.submit(t('buttons.send'), class:"button") %>
+    <%= link_to t('buttons.back'), addresses_path, class:"button-back" %>
   </div>
 <% end %>

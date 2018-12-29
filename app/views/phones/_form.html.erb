@@ -11,7 +11,8 @@
     </div>
   <% end %>
 <h1>
-  Phone
+<h1><%= @phone.model_name.human(count: 1) %></h1>
+
 </h1>
   <div class="field">
     <%= f.label :phone %><br>
@@ -22,7 +23,7 @@
     <%= f.text_field :contact_id %>
   </div>
   <div class="actions">
-    <%= f.submit("Enviar", class:"button") %>
-    <%= link_to 'Back', phones_path, class:"button-back" %>
+    <%= f.submit(t('buttons.send'), class:"button") %>
+    <%= link_to t('buttons.back'), phones_path, class:"button-back" %>
   </div>
 <% end %>

@@ -1,7 +1,7 @@
 <%= form_for(@contact, html: {class: "basic-grey"}) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+      <h2><%= pluralize(@contact.errors.count, t('message.errors')) %> </h2>
 
       <ul>
       <% @contact.errors.full_messages.each do |message| %>
@@ -11,7 +11,7 @@
     </div>
   <% end %>
 <h1>
- Contatos
+<%= @contact.model_name.human(count: 1) %>
 </h1>
   <div class="field">
     <%= f.label :name %><br>
@@ -65,7 +65,7 @@
     <%= f.text_area :rmk %>
   </div>
   <div class="actions">
-    <%= f.submit("Enviar", class:"button") %>
+    <%= f.submit(t('buttons.send'), class:"button") %>
     <%= link_to 'Voltar', contacts_path, class:"button-back" %>
   </div>
 <% end %>

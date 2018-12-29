@@ -10,18 +10,25 @@
       phone:
         one: Telefone
         other: Telefones
+      kind:
+        one: Tipo
+        other: Tipos
     attributes:
       contact:
-        name: "Nome"
-        email: "E-mail"
-        kind_id: "Tipo de contato"
-        kind: "Tipo de contato"
-        rmk: "Obs"
+        name: Nome
+        email: E-mail
+        kind_id: Tipo de contato
+        kind: Tipo de contato
+        rmk: Obs
       address:
-        street: "Rua"
-        city: "Cidade"
-        state: "Estado"
-        contact_id: "Contato"
-        contact: "Contato"
+        street: Rua
+        city: Cidade
+        state: Estado
+        contact_id: Contato
+        contact: Contato
       phone:
-        phone: "Telefone"
+        phone: Telefone
+        contact_id: Contato
+        contact: Contato
+      kind:
+        description: Descrição

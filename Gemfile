@@ -6,6 +6,10 @@ gem 'rails', '4.2.5'
 
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms http://github.com/nathanvda/cocoon
 gem 'cocoon'
+# i18n for kaminari
+gem 'kaminari-i18n'
+#  A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps https://github.com/amatsuda/kaminari/…
+gem 'kaminari'
 
 # A library for generating fake data such as names, addresses, and phone numbers.
 gem 'faker'

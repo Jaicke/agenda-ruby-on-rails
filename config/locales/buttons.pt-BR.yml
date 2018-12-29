@@ -4,5 +4,8 @@
     edit: Editar
     destroy: Excluir
     new: Novo
+    send: Enviar
+    back: Voltar
   message:
     confirm: Tem certeza?
+    errors: erro

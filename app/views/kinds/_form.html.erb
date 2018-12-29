@@ -11,14 +11,14 @@
     </div>
   <% end %>
 <h1>
-  Kinds
+<%= @kind.model_name.human(count: 1) %>
 </h1>
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_field :description %>
   </div>
   <div class="actions">
-    <%= f.submit("Enviar", class:"button") %>
-    <%= link_to 'Back', kinds_path, class:"button-back" %>
+    <%= f.submit(t('buttons.send'), class:"button") %>
+    <%= link_to t('buttons.back'), kinds_path, class:"button-back" %>
   </div>
 <% end %>
