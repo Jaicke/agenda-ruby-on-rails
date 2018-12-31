@@ -13,7 +13,7 @@ Rails.application.config.assets.precompile += %w( addresses.js
                                                   contacts.js
                                                   home.js
                                                   kinds.js
-                                                  phones.js,
+                                                  phones.js
                                                   addresses.scss
                                                   contacts.scss
                                                   home.scss

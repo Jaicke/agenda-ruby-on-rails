@@ -6,6 +6,10 @@
     new: Novo
     send: Enviar
     back: Voltar
+    home: Início
   message:
     confirm: Tem certeza?
     errors: erro
+    created: Item criado com sucesso!
+    updated: Item atualizado com sucesso!
+    destroyed: Item deletado com sucesso!

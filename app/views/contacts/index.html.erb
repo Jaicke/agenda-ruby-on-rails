@@ -1,5 +1,8 @@
 <div class="basic-grey">
- <p id="notice"><%= notice %></p>
+ 
+ <script>
+      $.notify("<%= notice %>", "success");
+ </script>
 
 <h1>Listando <%= "#{@contacts.model.model_name.human(count: @contacts.count)}"  %></h1>
 
@@ -31,7 +34,9 @@
 
 <br>
 
-<%= link_to t('buttons.new'), new_contact_path %>
+<%= link_to t('buttons.new'), new_contact_path, class:"btn btn-primary" %>
+<%= link_to t('buttons.home'), root_path, class:"btn btn-success" %>
+
 
 </div>
 

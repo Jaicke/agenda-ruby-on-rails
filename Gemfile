@@ -1,8 +1,15 @@
 source 'https://rubygems.org'
 
+gem 'bundler', '>= 1.8.4'
+
+gem 'rails-assets-bootstrap', source: 'https://rails-assets.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
+
+ruby '2.3.7'
+
+gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms http://github.com/nathanvda/cocoon
 gem 'cocoon'
@@ -17,8 +24,7 @@ gem 'faker'
 # Internationalization (i18n) library for Ruby http://rails-i18n.org/wiki
 gem 'rails-i18n'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,6 +56,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rails-pry'
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
 end
 
 group :development do
@@ -60,3 +68,10 @@ group :development do
   gem 'spring'
 end
 
+group :production do  
+  # Heroku dependency
+  gem 'pg'
+  # Heroku dependency
+  gem 'rails_12factor'
+end
+ 

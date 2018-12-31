@@ -48,11 +48,13 @@
  <div id="phones">
    
     <%= f.fields_for :phones do |phones_fields| %>
-    
+      
       <%= render partial: "phone_fields", locals:{f: phones_fields} %>   
    
   <% end %>
-   <%= link_to_add_association('[Adicionar Telefone]', f, :phones) %>
+   <%= f.label :phones, "<i class='fas fa-plus'></i>".html_safe %>
+   <%= link_to_add_association("[Adicionar Telefone]", f, :phones) %>
+    
 </div>
 
 
@@ -65,7 +67,7 @@
     <%= f.text_area :rmk %>
   </div>
   <div class="actions">
-    <%= f.submit(t('buttons.send'), class:"button") %>
-    <%= link_to 'Voltar', contacts_path, class:"button-back" %>
+    <%= f.submit(t('buttons.send'), class:"btn btn-primary") %>
+    <%= link_to 'Voltar', contacts_path, class:"btn btn-success" %>
   </div>
 <% end %>
